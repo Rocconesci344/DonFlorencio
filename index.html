@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Don Florencio | Quinta para Eventos de Día en Florencio Varela</title>
+  <meta name="description" content="Quinta Eventos Don Florencio en Barrio Cerrado El Ombú, Florencio Varela. Salón rústico en piedra y madera, parque arbolado, pileta cercada, fogón asador y cocina equipada para hasta 60 personas.">
+
+  <!-- Tipografías Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BARRA SUPERIOR FIJA -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#inicio" class="brand" aria-label="Inicio Eventos Don Florencio">
+        <img src="img/logo.jpeg" alt="Logo Eventos Don Florencio" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">Eventos Don Florencio</span>
+          <span class="brand-sub">Florencio Varela</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#el-lugar">El Lugar</a>
+        <a href="#espacios">Espacios</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- REEMPLAZAR href="#" POR EL LINK DE INSTAGRAM CUANDO ESTÉ CREADO -->
+        <a href="#instagram-proximamente" class="nav-social" title="Instagram (Próximamente)" aria-label="Instagram de Eventos Don Florencio">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+
+        <a href="tel:+5491165027373" class="nav-phone" title="Llamar al 11 6502-7373">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+          <span>11 6502-7373</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable para celular -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#el-lugar">El Lugar</a>
+      <a href="#espacios">Espacios</a>
+      <a href="#eventos">Tipos de Eventos</a>
+      <a href="#galeria">Galería de Fotos</a>
+      <a href="#ubicacion">Ubicación y Contacto</a>
+      <div class="mobile-menu-contacts">
+        <a href="tel:+5491165027373" class="btn-outline">📞 11 6502-7373</a>
+        <!-- REEMPLAZAR href="#" POR EL LINK DE INSTAGRAM CUANDO ESTÉ CREADO -->
+        <a href="#instagram-proximamente" class="btn-outline">📷 Instagram</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO PRINCIPAL -->
+  <section id="inicio" class="hero">
+    <img src="img/WhatsApp Image 2026-11-15 at 14.13.55 (1).jpeg" alt="Vista general de Quinta Don Florencio y pileta" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="hero-badge">Barrio Cerrado El Ombú · Florencio Varela</span>
+      <h1>Eventos <span>Don Florencio</span></h1>
+      <p>Una quinta de estilo campestre en piedra y madera pensada para celebrar encuentros inolvidables de día. Naturaleza, privacidad y calidez para hasta 60 invitados.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/5491165027373?text=Hola%20Eventos%20Don%20Florencio!%20Quisiera%20consultar%20disponibilidad%20para%20un%20evento%20de%20d%C3%ADa." target="_blank" rel="noopener" class="btn-wsp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          Consultar por WhatsApp
+        </a>
+        <a href="#galeria" class="btn-secondary">Recorrer la Quinta</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESENTACIÓN DEL LUGAR -->
+  <section id="el-lugar" class="section about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-tag">Bienvenidos</span>
+        <h2>Un entorno natural único para disfrutar de día</h2>
+        <p><strong>Eventos Don Florencio</strong> es una quinta privada ubicada dentro del entorno tranquilo y seguro de <strong>Barrio Cerrado El Ombú</strong>, en Florencio Varela. Su arquitectura artesanal combina paredes de piedra natural, troncos rústicos, aberturas de hierro forjado y vitrales antiguos que llenan cada rincón de personalidad.</p>
+        <p>Pensada exclusivamente para celebraciones diurnas al aire libre y en salón, la propiedad ofrece un equilibrio ideal entre comodidad y contacto con el verde: un parque arbolado extenso, galería techada de madera, pileta cercada y sector de fuego para asados.</p>
+
+        <div class="highlights">
+          <div class="highlight-item">
+            <span class="highlight-number">60</span>
+            <span class="highlight-label">Invitados de capacidad</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">100%</span>
+            <span class="highlight-label">Privacidad en barrio cerrado</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">Día</span>
+            <span class="highlight-label">Eventos diurnos a medida</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-images">
+        <img src="img/WhatsApp Image 2026-11-15 at 14.13.52.jpeg" alt="Cartel de madera rústico Don Florencio" class="about-img-main">
+        <img src="img/WhatsApp Image 2026-11-15 at 14.13.53 (1).jpeg" alt="Entrada principal de piedra y madera de la cabaña" class="about-img-accent">
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPACIOS E INSTALACIONES -->
+  <section id="espacios" class="section spaces">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Instalaciones</span>
+        <h2>Cada espacio pensado para tu evento</h2>
+        <p>Recorré las distintas áreas de la quinta preparadas para recibir a tus invitados con total comodidad.</p>
+      </div>
+
+      <div class="spaces-grid">
+        <!-- Espacio 1 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.13.51 (1).jpeg" alt="Salón principal de piedra y madera con mesas y sillas">
+          </div>
+          <div class="space-body">
+            <h3>Salón Principal Rústico</h3>
+            <p>Amplio salón con muros de piedra, vigas de madera a la vista, arañas de hierro y vitrales coloridos. Incluye mesas y sillas de estilo campestre listas para ambientar a gusto.</p>
+          </div>
+        </article>
+
+        <!-- Espacio 2 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.13.50 (2).jpeg" alt="Pileta cercada rodeada de palmeras y verde">
+          </div>
+          <div class="space-body">
+            <h3>Pileta Cercada & Solárium</h3>
+            <p>Piscina rodeada de deck de piedra y palmeras, totalmente delimitada con cerco perimetral de madera y malla para mayor seguridad durante reuniones familiares y con niños.</p>
+          </div>
+        </article>
+
+        <!-- Espacio 3 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.14.56.jpeg" alt="Amplio parque verde arbolado">
+          </div>
+          <div class="space-body">
+            <h3>Parque Arbolado Extenso</h3>
+            <p>Gran superficie de césped natural ideal para ceremonias al aire libre, livings exteriores, juegos infantiles, recepciones bajo el sol o carpas adicionales.</p>
+          </div>
+        </article>
+
+        <!-- Espacio 4 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.13.47 (2).jpeg" alt="Fogón circular de piedra con techo para asado">
+          </div>
+          <div class="space-body">
+            <h3>Fogón & Sector de Asador</h3>
+            <p>Fogón circular construido en piedra con estructura techada, ideal para realizar asados criollos, costillares a la estaca o encuentros alrededor del fuego.</p>
+          </div>
+        </article>
+
+        <!-- Espacio 5 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.13.46.jpeg" alt="Cocina equipada con horno industrial, bacha doble y freezer">
+          </div>
+          <div class="space-body">
+            <h3>Cocina Totalmente Equipada</h3>
+            <p>Espacio funcional preparado para catering o uso propio, equipado con cocina semi-industrial con plancha y horno, campana extractora, mesada con doble bacha y freezer.</p>
+          </div>
+        </article>
+
+        <!-- Espacio 6 -->
+        <article class="space-card">
+          <div class="space-img">
+            <img src="img/WhatsApp Image 2026-11-15 at 14.13.56.jpeg" alt="Galería exterior techada de madera y piedra">
+          </div>
+          <div class="space-body">
+            <h3>Galería Techada & Sanitarios</h3>
+            <p>Galería semicubierta de troncos y piedra que conecta el salón con el parque y la pileta, acompañada por sanitarios completos con ducha y vestuario.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPOS DE EVENTOS -->
+  <section id="eventos" class="section events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Celebraciones</span>
+        <h2>El escenario ideal para lo que quieras festejar</h2>
+        <p>Nos adaptamos a la propuesta de cada cliente para eventos diurnos de hasta 60 personas.</p>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-pill">
+          <div class="event-icon">💍</div>
+          <h3>Casamientos de Día</h3>
+          <p>Ceremonia en el parque al aire libre y almuerzo o tarde de festejo en un entorno íntimo y natural.</p>
+        </div>
+        <div class="event-pill">
+          <div class="event-icon">🎂</div>
+          <h3>Cumpleaños y Aniversarios</h3>
+          <p>Festejos familiares, cumpleaños infantiles, de 15 de día o reuniones con amigos con pileta y asado.</p>
+        </div>
+        <div class="event-pill">
+          <div class="event-icon">🕊️</div>
+          <h3>Bautismos y Comuniones</h3>
+          <p>Un ambiente cálido, luminoso y seguro para compartir almuerzos familiares inolvidables.</p>
+        </div>
+        <div class="event-pill">
+          <div class="event-icon">🥂</div>
+          <h3>Reuniones y Eventos Privados</h3>
+          <p>Despedidas de año, jornadas corporativas relajadas, baby showers o cualquier celebración a tu medida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE IMÁGENES -->
+  <section id="galeria" class="section gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galería</span>
+        <h2>Conocé Don Florencio en imágenes</h2>
+        <p>Tocá cualquier fotografía para verla en pantalla completa.</p>
+      </div>
+
+      <div class="gallery-filters" role="tablist" aria-label="Filtrar fotos por sector">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="exterior">Fachada y Galería</button>
+        <button class="filter-btn" data-filter="salon">Salón y Detalles</button>
+        <button class="filter-btn" data-filter="parque">Parque, Pileta y Fogón</button>
+        <button class="filter-btn" data-filter="cocina">Cocina y Baños</button>
+        <button class="filter-btn" data-filter="noche">Vista Nocturna</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- FACHADA Y GALERÍA -->
+        <div class="gallery-item" data-category="exterior">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.53.jpeg" alt="Frente de piedra y madera de Eventos Don Florencio" loading="lazy">
+          <span class="gallery-caption">Frente de piedra y madera</span>
+        </div>
+        <div class="gallery-item" data-category="exterior">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.53 (1).jpeg" alt="Acceso principal de la cabaña" loading="lazy">
+          <span class="gallery-caption">Acceso principal</span>
+        </div>
+        <div class="gallery-item" data-category="exterior">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.56.jpeg" alt="Galería techada de troncos y piedra" loading="lazy">
+          <span class="gallery-caption">Galería techada</span>
+        </div>
+        <div class="gallery-item" data-category="exterior">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.57 (1).jpeg" alt="Vista lateral de la galería hacia el parque" loading="lazy">
+          <span class="gallery-caption">Galería con vista al parque</span>
+        </div>
+        <div class="gallery-item" data-category="exterior">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.47 (1).jpeg" alt="Detalle de ventanales y parque verde" loading="lazy">
+          <span class="gallery-caption">Aberturas y entorno verde</span>
+        </div>
+
+        <!-- SALÓN Y DETALLES -->
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.51 (1).jpeg" alt="Vista general del salón armado con mesas y sillas" loading="lazy">
+          <span class="gallery-caption">Salón principal armado</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.52 (1).jpeg" alt="Techo de madera, vigas y arañas del salón" loading="lazy">
+          <span class="gallery-caption">Techo de madera y arañas</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.51 (3).jpeg" alt="Sector lateral del salón con ventanales" loading="lazy">
+          <span class="gallery-caption">Iluminación natural en salón</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.57.jpeg" alt="Vitrales artesanales y mesa rústica" loading="lazy">
+          <span class="gallery-caption">Vitrales artesanales</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.52.jpeg" alt="Cartel tallado Don Florencio" loading="lazy">
+          <span class="gallery-caption">Cartel Don Florencio</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.51 (2).jpeg" alt="Decoración rústica sobre puerta" loading="lazy">
+          <span class="gallery-caption">Detalles decorativos</span>
+        </div>
+        <div class="gallery-item" data-category="salon">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.58.jpeg" alt="Mesas con diseño vintage y centros de mesa" loading="lazy">
+          <span class="gallery-caption">Mobiliario con estilo vintage</span>
+        </div>
+
+        <!-- PARQUE, PILETA Y FOGÓN -->
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.55 (1).jpeg" alt="Vista panorámica de la quinta y pileta de día" loading="lazy">
+          <span class="gallery-caption">Vista general de día</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.50 (2).jpeg" alt="Pileta cercada con tranquera de madera" loading="lazy">
+          <span class="gallery-caption">Pileta cercada</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.55.jpeg" alt="Palmeras y sector de piscina" loading="lazy">
+          <span class="gallery-caption">Sector piscina y palmeras</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.14.56.jpeg" alt="Parque verde amplio para eventos al aire libre" loading="lazy">
+          <span class="gallery-caption">Parque amplio</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.54 (1).jpeg" alt="Vista abierta del terreno arbolado" loading="lazy">
+          <span class="gallery-caption">Espacio verde y arboleda</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.47 (2).jpeg" alt="Fogón asador circular de piedra techado" loading="lazy">
+          <span class="gallery-caption">Fogón asador techado</span>
+        </div>
+        <div class="gallery-item" data-category="parque">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.47 (3).jpeg" alt="Sector de asador junto a la galería" loading="lazy">
+          <span class="gallery-caption">Asador y galería</span>
+        </div>
+
+        <!-- COCINA Y BAÑOS -->
+        <div class="gallery-item" data-category="cocina">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.46.jpeg" alt="Cocina con freezer, bacha doble y cocina industrial" loading="lazy">
+          <span class="gallery-caption">Cocina equipada y freezer</span>
+        </div>
+        <div class="gallery-item" data-category="cocina">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.47.jpeg" alt="Vista completa de la cocina en piedra" loading="lazy">
+          <span class="gallery-caption">Mesada y horno</span>
+        </div>
+        <div class="gallery-item" data-category="cocina">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.48.jpeg" alt="Rincón de descanso interior" loading="lazy">
+          <span class="gallery-caption">Rincón interior</span>
+        </div>
+        <div class="gallery-item" data-category="cocina">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.49 (1).jpeg" alt="Sanitario con ducha y paredes de piedra" loading="lazy">
+          <span class="gallery-caption">Sanitario con ducha</span>
+        </div>
+        <div class="gallery-item" data-category="cocina">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.50 (1).jpeg" alt="Lavabo y espejo de estilo rústico" loading="lazy">
+          <span class="gallery-caption">Lavabo rústico</span>
+        </div>
+
+        <!-- VISTA NOCTURNA -->
+        <div class="gallery-item" data-category="noche">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.39.jpeg" alt="Quinta Don Florencio iluminada al caer la tarde" loading="lazy">
+          <span class="gallery-caption">Iluminación cálida exterior</span>
+        </div>
+        <div class="gallery-item" data-category="noche">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.43 (1).jpeg" alt="Galería con guirnaldas de luces cálidas" loading="lazy">
+          <span class="gallery-caption">Galería iluminada</span>
+        </div>
+        <div class="gallery-item" data-category="noche">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.44.jpeg" alt="Fachada frontal iluminada" loading="lazy">
+          <span class="gallery-caption">Frente iluminado</span>
+        </div>
+        <div class="gallery-item" data-category="noche">
+          <img src="img/WhatsApp Image 2026-11-15 at 14.13.45 (1).jpeg" alt="Pileta iluminada por la noche" loading="lazy">
+          <span class="gallery-caption">Sector pileta iluminado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN Y CONTACTO DIRECTO -->
+  <section id="ubicacion" class="section contact-section">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <span class="section-tag">Dónde Estamos</span>
+        <h2>Ubicación y Contacto Directo</h2>
+        <p>Estamos en <strong>Florencio Varela</strong>, dentro del entorno seguro y arbolado de <strong>Barrio Cerrado El Ombú</strong>. Escribinos directamente por WhatsApp o llamanos para conocer disponibilidad de fechas y coordinar una visita.</p>
+
+        <ul class="contact-list">
+          <li>
+            <strong>📍 Ubicación:</strong>
+            <span>Barrio Cerrado El Ombú, Florencio Varela, Provincia de Buenos Aires.</span>
+          </li>
+          <li>
+            <strong>👥 Capacidad máxima:</strong>
+            <span>Hasta 60 invitados (eventos de día).</span>
+          </li>
+          <li>
+            <strong>📞 Teléfono / WhatsApp:</strong>
+            <a href="tel:+5491165027373">11 6502-7373</a>
+          </li>
+          <li>
+            <strong>📷 Instagram:</strong>
+            <!-- REEMPLAZAR href="#" POR EL LINK DE INSTAGRAM CUANDO ESTÉ CREADO -->
+            <a href="#instagram-proximamente">@eventosdonflorencio (Próximamente)</a>
+          </li>
+        </ul>
+
+        <div class="contact-cta">
+          <a href="https://wa.me/5491165027373?text=Hola%20Eventos%20Don%20Florencio!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20el%20alquiler%20de%20la%20quinta." target="_blank" rel="noopener" class="btn-wsp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            Enviar mensaje por WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="map-box">
+        <iframe
+          title="Mapa de Florencio Varela"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3272.326829746113!2d-58.292694124246474!3d-34.898246772850094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDUzJzUzLjciUyA1OMKwMTcnMjQuNCJX!5e0!3m2!1ses!2sar!4v1794852022520!5m2!1ses!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="img/logo.jpeg" alt="Logo Eventos Don Florencio">
+        <div>
+          <strong>Eventos Don Florencio</strong>
+          <p>Barrio Cerrado El Ombú · Florencio Varela</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="tel:+5491165027373">📞 11 6502-7373</a>
+        <a href="https://wa.me/5491165027373" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <!-- REEMPLAZAR href="#" POR EL LINK DE INSTAGRAM CUANDO ESTÉ CREADO -->
+        <a href="#instagram-proximamente">📷 Instagram</a>
+      </div>
+
+      <p class="footer-copy">© 2026 Eventos Don Florencio. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE FIJO DE WHATSAPP -->
+  <a href="https://wa.me/5491165027373?text=Hola%20Eventos%20Don%20Florencio!%20Quisiera%20hacer%20una%20consulta%20por%20un%20evento."
+     target="_blank"
+     rel="noopener"
+     class="wsp-float"
+     aria-label="Chatear por WhatsApp con Eventos Don Florencio">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+    <span class="wsp-tooltip">¡Escribinos por WhatsApp!</span>
+  </a>
+
+  <!-- VISOR DE IMAGEN AMPLIADA (LIGHTBOX) -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="">
+      <p id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto siguiente">&#10095;</button>
+  </div>
+
+  <script>
+    // Menú móvil
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Filtros de galería
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.dataset.category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Lightbox (visor de fotos)
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    let currentVisibleItems = [];
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+      currentVisibleItems = Array.from(galleryItems).filter(item => item.style.display !== 'none');
+      currentIndex = index;
+      updateLightboxImage();
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function updateLightboxImage() {
+      const item = currentVisibleItems[currentIndex];
+      const img = item.querySelector('img');
+      const caption = item.querySelector('.gallery-caption');
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = caption ? caption.textContent : img.alt;
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const visible = Array.from(galleryItems).filter(i => i.style.display !== 'none');
+        const idx = visible.indexOf(item);
+        openLightbox(idx);
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    lightboxPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex - 1 + currentVisibleItems.length) % currentVisibleItems.length;
+      updateLightboxImage();
+    });
+
+    lightboxNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      currentIndex = (currentIndex + 1) % currentVisibleItems.length;
+      updateLightboxImage();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxPrev.click();
+      if (e.key === 'ArrowRight') lightboxNext.click();
+    });
+
+    // Aviso amigable en enlaces de Instagram aún no creados
+    document.querySelectorAll('a[href="#instagram-proximamente"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('¡Nuestro perfil de Instagram estará disponible muy pronto! Mientras tanto, podés escribirnos directo por WhatsApp al 11 6502-7373.');
+      });
+    });
+  </script>
+</body>
+</html>
